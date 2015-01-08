@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'd!1artmldo736k$tg-&(ya(_-^umm&h_c@ry-ah)=mhk601u*o'
+SECRET_KEY = '+dyns1h&@d*bqcqe-nluw(#(8j=@ojiuf)=%gpx=i)dej5=*)4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -36,7 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls'
+    'polls',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -48,6 +48,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 ROOT_URLCONF = 'mysite.urls'
 
@@ -67,7 +69,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'UTC'
 
